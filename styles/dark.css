@@ -7,6 +7,7 @@
   --btn-color-hover: rgba(255, 0, 112, 0.40);
   --bg-color: #000028;
   --backgroung-image: url(../images/cover-image-dark.png);
+  --bg-color:#000028; 
 }
 
 .theme-dark .header__rec {

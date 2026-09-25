@@ -4,6 +4,7 @@
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 23.4px;
+  background-color: var();
   background-image: var(--backgroung-image);
   background-position: center;
   background-size: cover;
