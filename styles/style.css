@@ -427,9 +427,9 @@
     gap: 20px;
     padding-block-end: 50px;
   }
-.section__subtitle {
-  margin-block-end: 0;
-}
+  .section__subtitle {
+    margin-block-end: 0;
+  }
   .section__gallery {
     padding: 0 0 40px 0;
   }
