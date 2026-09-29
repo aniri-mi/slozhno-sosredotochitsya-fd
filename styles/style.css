@@ -4,7 +4,7 @@
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 23.4px;
-  background-color: var();
+  background-color: var(--bg-color);
   background-image: var(--backgroung-image);
   background-position: center;
   background-size: cover;
@@ -149,6 +149,7 @@
 .card__text {
   font-size: var(--font-size);
   color: var(--text-color);
+  padding-top: 10px;
 }
 
 /* Ссылки */
@@ -182,11 +183,7 @@
 .section-why .section__content {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-}
-
-.section-why .card:first-child .card__text {
-  padding-block-end: 10px;
+  gap: 20px;
 }
 
 /* Секция: Что снижает концентрацию внимания? */
@@ -208,30 +205,36 @@
   padding-block-start: 20px;
 }
 
-.section-what .card__title {
-  margin-block-end: 10px;
-}
-
 /* Секция: Как концентрироваться лучше */
-
+.section__content{
+  
+}
 .section-how {
   display: grid;
   grid-template-columns: 34% 66%;
+  /* Определяем две строки: первая для подзаголовка, вторая для контента */
+  grid-template-rows: auto 1fr; 
   padding-block-end: 80px;
   margin: 0 20px;
+}
+.section-how .section__title {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1; /* Заголовок занимает обе строки */
+  align-self: start;
 }
 
 .section-how .section__subtitle-wrapper {
   grid-column: 2 / 3;
+   grid-row: 1 / 2; /* Подзаголовок в первой строке */
 }
 
 .section__subtitle {
-  font-weight: 400;
   margin-block-end: 20px;
 }
 
 .section-how .section__content {
   grid-column: 2 / 3;
+   grid-row: 2 / 3; /* Контент во второй строке */
   display: grid;
   gap: 20px;
 }
