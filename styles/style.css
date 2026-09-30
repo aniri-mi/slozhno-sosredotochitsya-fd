@@ -33,7 +33,7 @@
   padding: 0 13px;
   color: var(--btn-color);
   text-align: center;
-  border: none;
+  border: 1px solid transparent;
   background: transparent;
   text-transform: lowercase;
 }
@@ -113,6 +113,8 @@
 /* Заголовок шапки */
 
 .header__title {
+  position: relative;
+  left: -20px;
   text-shadow: 4px 4px 0 var(--accent-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   color: var(--title-color);
